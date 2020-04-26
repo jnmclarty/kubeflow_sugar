@@ -88,5 +88,5 @@ else:
 
 # Why not send PRs to the KFP SDK?
 
-This library is intended to function without needing kfp installed - for the most part.  In other places, consider it a (non graphical) UI to pipeline related information.  You shouldn't need kfp (and it's dependencies) in any business-logic/modelling code.  But, this library, you can import.
+This library is intended to function without needing kfp installed - for the most part.  In other places, consider it a (non graphical) UI to pipeline related information.  You shouldn't need kfp (and it's dependencies) in any business-logic/modelling code.  But, this library can be imported anywhere without bringing all the kfp dependencies.
 
