@@ -73,18 +73,6 @@ else:
   file_save_location = '~/data'
 ```
 
-### Example of Pipeline-Run-Check
-
-```
-from kubeflow_sugar import is_pipeline_run
-
-
-if is_pipeline_run():
-  file_save_location = '/mnt'
-else:
-  file_save_location = '~/data'
-```
-
 
 # Why not send PRs to the KFP SDK?
 
