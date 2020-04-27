@@ -18,7 +18,7 @@ None yet, PRs incoming...
 
 Instead of...
 
-```
+```python
   num_cnt = len(some_list)
   ...
   accuracy = accuracy_score(df['target'], df['predicted'])
@@ -40,7 +40,7 @@ Instead of...
 
 You could write...
 
-```
+```python
 from kubeflow_sugar import PipelineMetricCollector, PERCENT
 
 collector = PipelineMetricCollector('mlpipeline-metrics.json')
@@ -51,7 +51,7 @@ accuracy = accuracy_score(df['target'], df['predicted'])
 collector.collect(accuracy_score=accuracy, type=PERCENT)
 ```
 then bonus points for...
-```
+```python
 metrics = pd.Series(...)
 collector.collect(metrics)
 
@@ -63,7 +63,7 @@ collector.collect(metrics)
 
 ### Example of Pipeline-Run-Check
 
-```
+```python
 from kubeflow_sugar import is_pipeline_run
 
 
